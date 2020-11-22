@@ -73,10 +73,6 @@ function draw() {
 
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
-   packageSprite= createSprite(0, 130, 10,10);
-	packageSprite.addImage("parcel", packageIMG);
 	packageSprite.velocityY = 4;
-	packageSprite.velocityX=4
-	packageSprite.scale = 0.2;
  }
 }
