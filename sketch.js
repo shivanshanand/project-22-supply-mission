@@ -68,11 +68,15 @@ function draw() {
 	helicopterSprite.scale=0.6
 	helicopterSprite.velocityX=4;
   }
+	
+	packageSprite.x= packageBody.position.x ;
+		packageSprite.y= packageBody.position.y ;
 
 }
 
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
 	packageSprite.velocityY = 4;
+	 Matter.Body.setStatic( packageBody , false);
  }
 }
