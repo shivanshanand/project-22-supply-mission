@@ -38,12 +38,12 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(0 , 170 , 10 , {restitution:1,isnonStatic:true});
+	packageBody = Bodies.circle(0 , 170 , 10 , {restitution:1,isStatic:false});
 	World.add(world, packageBody);
 	
 
 	//Create a Ground
-	ground = Bodies.rectangle((600,480,1200,20 , {isStatic:true} );
+	ground = Bodies.rectangle(600,480,1200,20 , {isStatic:true} );
  	World.add(world, ground);
 	
   
