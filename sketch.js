@@ -36,7 +36,7 @@
 	engine = Engine.create();
 	world = engine.world;
 	
-	packageBody = Bodies.circle(600,90,10, {restitution:0.4,isStatic:false});
+	packageBody = Bodies.circle(600,90,10, {restitution:0.4,isStatic:true});
 	World.add(world, packageBody);
 	
 	//Create a Ground
